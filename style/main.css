@@ -9,7 +9,9 @@ body {
 .container {
   width: 90%;
   margin-inline: auto;
-  margin-block: 1rem;
+}
+.main {
+  margin-block: 2rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -22,8 +24,8 @@ body {
 #details {
   grid-area: 1 / 4 / 2 / 6;
 }
-@media screen and (max-width: 768px) {
-  .container {
+@media screen and (max-width: 820px) {
+  .main {
     grid-template-columns: repeat(2, 1fr);
   }
   #gallery {
@@ -38,6 +40,15 @@ img {
   height: 100%;
   border-radius: 10px;
 }
+#header .path {
+  margin-block: 1rem;
+  color: gray;
+}
+#header .path .active {
+  font-weight: bold;
+  color: black;
+}
+
 #gallery .mainImg {
   height: 450px;
   object-fit: cover;
