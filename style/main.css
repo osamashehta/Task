@@ -44,9 +44,26 @@ img {
   margin-block: 1rem;
   color: gray;
 }
+#header .path span {
+  font-size: 16px;
+}
 #header .path .active {
   font-weight: bold;
   color: black;
+}
+
+@media screen and (max-width: 600px) {
+  #header .path {
+    margin-block: 8px;
+
+  }
+  #header .path span {
+    font-size: 10px;
+
+  }
+  .container {
+    width: 95%;
+  }
 }
 
 #gallery .mainImg {
